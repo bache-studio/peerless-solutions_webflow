@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/components/marquee/marquee.css"],
+  "sourcesContent": [".marquee-track {\n  display: flex;\n  width: var(--track-width, auto);\n  opacity: 0;\n  transition: opacity 0.3s ease-in;\n}\n\n.marquee-track.marquee-ready {\n  opacity: 1;\n  animation: marquee-scroll linear infinite;\n  animation-duration: var(--marquee-duration, 2s);\n  will-change: transform;\n}\n\n.marquee-list {\n  display: flex;\n  flex-shrink: 0;\n}\n\n@keyframes marquee-scroll {\n  0% {\n    transform: translateX(0);\n  }\n  100% {\n    transform: translateX(var(--move-distance, 0));\n  }\n}\n"],
+  "mappings": ";;AAAA,CAAC;AACC,WAAS;AACT,SAAO,IAAI,aAAa,EAAE;AAC1B,WAAS;AACT,cAAY,QAAQ,KAAK;AAC3B;AAEA,CAPC,aAOa,CAAC;AACb,WAAS;AACT,aAAW,eAAe,OAAO;AACjC,sBAAoB,IAAI,kBAAkB,EAAE;AAC5C,eAAa;AACf;AAEA,CAAC;AACC,WAAS;AACT,eAAa;AACf;AAEA,WAVa;AAWX;AACE,eAAW,WAAW;AACxB;AACA;AACE,eAAW,WAAW,IAAI,eAAe,EAAE;AAC7C;AACF;",
+  "names": []
+}

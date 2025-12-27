@@ -1,0 +1,27 @@
+.marquee-track {
+  display: flex;
+  width: var(--track-width, auto);
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.marquee-track.marquee-ready {
+  opacity: 1;
+  animation: marquee-scroll linear infinite;
+  animation-duration: var(--marquee-duration, 2s);
+  will-change: transform;
+}
+
+.marquee-list {
+  display: flex;
+  flex-shrink: 0;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(var(--move-distance, 0));
+  }
+}

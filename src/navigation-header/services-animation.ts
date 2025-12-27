@@ -51,7 +51,7 @@ export function initServicesAnimation() {
     backgroundBlur!.style.setProperty('-webkit-backdrop-filter', 'blur(10px)');
     backgroundBlur!.style.backdropFilter = 'blur(10px)';
     menuWrapper!.style.transition = 'height 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)';
-    menuWrapper!.style.height = '200px';
+    menuWrapper!.style.height = '240px';
     menuWrapper!.style.opacity = '1';
     menuBackground!.style.opacity = '0.6';
     menuBackground!.style.transition = 'opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1)';
